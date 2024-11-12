@@ -55,6 +55,8 @@ with open(source_file, 'r') as src, open(destination_file, 'w') as dest:
 existing_FILE_PATH = "test1.txt"
 new_file = "filtered_words.txt"
 
+print("ahoj")
+
 with open(existing_FILE_PATH) as src, open(new_file, 'w') as dest:
     for line in src:
         words = line.split()
