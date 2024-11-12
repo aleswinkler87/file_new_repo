@@ -51,6 +51,8 @@ with open(source_file, 'r') as src, open(destination_file, 'w') as dest:
         dest.write(" ".join(filtered_words) + "\n")"""
 
 
+"""
+#Task1
 
 existing_FILE_PATH = "test1.txt"
 new_file = "filtered_words.txt"
@@ -65,5 +67,17 @@ with open(existing_FILE_PATH) as src, open(new_file, 'w') as dest:
         filtered_words = [word for word in words if len(word) >= 4]
 
         dest.write(" ".join(filtered_words) + "\n")
+"""
+
+#Task9
+# Define the path to the file
+file_path = "test.txt"
+
+# Open the file in read mode and count the characters
+with open(file_path, 'r') as file:
+    content = file.read()  # Read the entire file content
+    num_characters = len(content)  # Count the characters
+
+print(f"The number of characters in the file is: {num_characters}")
 
 
